@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪食蛇</title>
+    <style>
+    *{
+        padding:0;
+        margin:0;
+        outline-style: none;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        background: url("bg.jpg")no-repeat center/cover;
+        ;
+    }
+        .hezi{
+            width: 600px;
+            height: 600px;
+            background: #000000;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-top: -300px;
+            margin-left: -300px;
+            background:url("3.jpg") no-repeat center/cover;
+            /*position: relative;*/
+            /*border-left: 1px solid #000000;*/
+            /*border-top: 1px solid #000000;*/
+        }
+        .fenshu{
+            width: 195px;
+            height: 61px;
+            background: url("scor.png");
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        span{
+            color: #ffffff;
+            font-size: 20px;
+            position: absolute;
+            top: 25px;
+            left: 120px;
+        }
+        .box{
+            width: 29px;
+            height: 29px;
+            /*background: #ffffff;*/
+            float: left;
+            /*border-bottom: 1px solid #000000;*/
+            /*border-right: 1px solid #000000;*/
+        }
+        .hot{
+            background:url("1.png") no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hezi"></div>
+<div class="fenshu"><span>3</span></div>
+
+
+<audio src="gc.mp3" autoplay loop preload id="gcmp3"></audio>
+<audio src="sidiao.mp3" id="sidiao"></audio>
+<audio src="cdx.wav" id="cdx"></audio>
+<script src="jquery-3.2.1.js"></script>
+<script src="tanshishe.js"></script>
+<script>
+    let tanchishe=new tanshi();
+    tanchishe.tianjia();
+</script>
+</body>
+</html>
